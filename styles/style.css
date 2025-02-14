@@ -67,8 +67,8 @@
 .card__header {
   font-weight: 700;/* tovar */
   font-size: 18px;/* tovar */
-  line-height: 21.78px;
-  margin: 4px auto 5px 10px;/* tovar */
+  line-height: 22px;
+  margin: 5px auto 4px 10px;/* tovar */
 }
 
 .card__image{
@@ -80,19 +80,37 @@
   display: flex;
   flex-direction: column;
   margin: 25px;
-  gap: 26px;/* tovar */
+  gap: 25px;/* tovar */
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+}
+.card__text {
+  margin-bottom: 2px;
+}
+
+.card__text:last-of-type{
+  margin-bottom: 0px;
 }
 
 .card__button {
   font-family: "PressStart2P", sans-serif;/* tovar */
   font-weight: 400;/* tovar */
   font-size: 14px; /* tovar */
-  inline-size: 130px;
-  block-size: 38px;
+  inline-size: 130px;/* tovar */
+  block-size: 38px;/* tovar */
   align-self: flex-end;
   background-color: transparent;
   border: 2px solid #000;
+}
+
+.save_button {
+  font-family: "PressStart2P", sans-serif;/* tovar */
+  font-weight: 400;/* tovar */
+  font-size: 14px; /* tovar */
+  inline-size: 335px;/* tovar */
+  block-size: 55px;/* tovar */
+  background-color: transparent;
+  border: 2px solid #000;
+  margin-bottom: 103px;
 }

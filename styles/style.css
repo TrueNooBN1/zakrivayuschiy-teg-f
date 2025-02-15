@@ -9,13 +9,18 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-/* body {
-  font-family: 'Roboto-Flex-Variable', sans-serif;
-}  */
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: 'Inter-Variable', sans-serif;/* tovar */
+  background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px,transparent 2px 4px),/* tovar */
+                    repeating-linear-gradient(to bottom, #d3d3d3 0 2px,transparent 2px 4px),/* tovar */
+                    linear-gradient(to bottom, #e7e7e7, #1a1a1a);/* tovar */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -56,6 +61,7 @@
 }
 
 .card{
+  background-color: #fff;
   display: flex;
   font-weight: 400;/* tovar */
   flex-direction: column;
@@ -93,24 +99,80 @@
   margin-bottom: 0px;
 }
 
-.card__button {
+.button{
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+.button__text{
   font-family: "PressStart2P", sans-serif;/* tovar */
   font-weight: 400;/* tovar */
   font-size: 14px; /* tovar */
+}
+
+.button__container {
+  display: flex;
+  align-self: flex-end;
+  gap: 12px
+}
+
+.card__like-button {
   inline-size: 130px;/* tovar */
   block-size: 38px;/* tovar */
-  align-self: flex-end;
-  background-color: transparent;
-  border: 2px solid #000;
 }
 
 .save_button {
-  font-family: "PressStart2P", sans-serif;/* tovar */
-  font-weight: 400;/* tovar */
-  font-size: 14px; /* tovar */
   inline-size: 335px;/* tovar */
   block-size: 55px;/* tovar */
-  background-color: transparent;
-  border: 2px solid #000;
   margin-bottom: 103px;
+  position: relative;
+}
+
+.save_dialog {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  margin: 361px auto 0;
+  text-align: center;
+  inline-size: 353px;/* tovar */
+  block-size: 191px;/* tovar */
+}
+
+.ok_button {
+  inline-size: 293px;/* tovar */
+  block-size: 40px;/* tovar */
+  text-transform: uppercase;
+}
+
+.like-icon {
+  margin-top: 9px;
+  inline-size: 27px;
+  block-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.floppy-icon{
+  inline-size: 21px;/* tovar */
+  block-size: 21px;/* tovar */
+  margin-right: 8px;
+}
+
+.dialog__floppy-icon{
+  min-inline-size: 39px;
+  inline-size: 39px;/* tovar */
+  block-size: 39px;/* tovar */
+  object-fit: contain;
+}
+
+.dialog__text {
+  margin: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
 }

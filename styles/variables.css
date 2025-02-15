@@ -1,1 +1,39 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root{
+  --main-font-weight: 400;
+  --bold-font-weight: 700;
+
+  --header-font-size: 65px;
+  --main-font-size: 14px;
+  --header-subtitle-font-size: 23px;
+  --card-decription-font-size: 18px;
+
+  --tag-offset: 25px;
+
+  --main-content-gap: 50px;
+  --card-content-gap: 25px;
+
+  --main-font: "Inter-Variable";
+  --header-font: "PressStart2P";
+
+  --header-container-size: 700px;
+  --header-block-size: 368px;
+
+  --border-color: #000;
+
+  --background-gradient:  repeating-linear-gradient(to right, #d3d3d3 0 2px,transparent 2px 4px),/* tovar */
+                          repeating-linear-gradient(to bottom, #d3d3d3 0 2px,transparent 2px 4px),/* tovar */
+                          linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+
+  --header-top-margin: 100px;
+
+  --save-button-width: 335px;
+  --save-button-height: 55px;
+
+  --svg-save-icon-size: 21px;
+
+  --dialog-ok-button-width: 293px; 
+  --dialog-ok-button-height: 40px; 
+  --dialog-top-margin: 10px;
+  --dialog-side-margin: 10px;
+}

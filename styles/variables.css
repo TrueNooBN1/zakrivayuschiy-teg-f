@@ -36,4 +36,8 @@
   --dialog-ok-button-height: 40px; 
   --dialog-top-margin: 10px;
   --dialog-side-margin: 10px;
+  --accent-color: #000;
+
+  --like-btn-width: 130px;
+  --like-btn-height: 38px;
 }

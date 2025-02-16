@@ -99,7 +99,6 @@
 
 .card__container-image {
   /* padding-right: 3px; */
-  inline-size: 99%;
   inline-size: var(--header-container-size);
   position: relative;
   overflow: hidden;
@@ -116,6 +115,34 @@
   filter: blur(5px);
 }
 
+.filter_brightness {
+  filter: brightness(200%);
+}
+
+.filter_contrast {
+  filter: contrast(10%);
+}
+
+.filter_invert {
+  filter: invert(80%);
+}
+
+.filter_opacity {
+  filter: opacity(10%);
+}
+
+.filter_sepia {
+  filter: sepia(80%);
+}
+
+.filter_saturate {
+  filter: saturate(140%);
+}
+
+.filter_saturate.filter_sepia {
+  filter: sepia(80%) saturate(140%);
+}
+
 .card__image-tag {
   text-shadow:
   -1px 0 #fff, 
@@ -124,7 +151,7 @@
   0 -1px #fff;
   font-family: var(--header-font, sans-serif);
   font-weight: var(--main-font-weight, 400);
-  font-size: var(--main-font-size); 
+  font-size: var(--main-font-size);
   mix-blend-mode: hard-light;
   position: absolute;
   top: var(--card-content-gap);
@@ -331,7 +358,7 @@
   text-transform: uppercase;
 }
 
-@media (width <= 375px){
+@media (width <= 375px) {
   /* .page{
     width: 100vw;
   } */
@@ -342,8 +369,8 @@
     --save-button-width: 306px;
     --save-button-height: 84px;
     --svg-save-icon-size: 28px;
-    --dialog-ok-button-width: 257px; 
-    --dialog-ok-button-height: 38px; 
+    --dialog-ok-button-width: 257px;
+    --dialog-ok-button-height: 38px;
     --dialog-top-margin: 10px;
     --dialog-side-margin: 22px;
   }
@@ -363,7 +390,7 @@
     margin-top: 5px;
   }
     
-  .card{
+  .card {
     inline-size: 100%;
     border: 2px solid var(--border-color);
     margin-right: 0;

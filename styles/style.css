@@ -23,15 +23,15 @@
 }
 
 .header {
-  font-family: var(--header-font, fantasy);
-  font-weight: var(--main-font-weight, 400);
-  min-inline-size: 375px;
   margin: var(--header-top-margin) auto;
   border: 2px solid var(--border-color);
-  background-color: #fff;
-  inline-size: min(100vw, clamp(375px, 49%, 700px));
   padding-top: var(--header-top-padding);
   padding-bottom: var(--header-top-padding);
+  font-family: var(--header-font, fantasy);
+  font-weight: var(--main-font-weight, 400);
+  background-color: #fff;
+  min-inline-size: 375px;
+  inline-size: min(100vw, clamp(375px, 49%, 700px));
 }
 
 .header__title {
@@ -75,9 +75,9 @@
 
 .card__container-image {
   position: relative;
+  border: 2px solid var(--border-color);
   overflow: hidden;
   inline-size: 100%;
-  border: 2px solid var(--border-color);
 }
 
 .card__image {
@@ -126,6 +126,7 @@
   position: absolute;
   top: var(--card-content-gap);
   right: var(--tag-offset);
+  opacity: 0.5;
   font-family: var(--header-font, fantasy);
   font-weight: var(--main-font-weight, 400);
   font-size: var(--main-font-size);
@@ -135,7 +136,6 @@
   1px 0 #fff, 
   0 -1px #fff;
   mix-blend-mode: hard-light;
-  opacity: 0.5;
 }
 
 @supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
@@ -213,12 +213,12 @@
 
 .save_button {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 103px;
   inline-size: var(--save-button-width);
   block-size: var(--save-button-height);
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
 }
 
 .save_dialog {
@@ -243,13 +243,13 @@
 }
 
 .card__icon-button {
+  margin-top: 2px;
   border: none;
+  padding: 0;
   outline: none;
   background-color: transparent;
   block-size: var(--like-btn-icon-height);
   inline-size: var(--like-btn-icon-height);
-  padding: 0;
-  margin-top: 2px;
 }
 
 .like-icon {
@@ -262,7 +262,7 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--accent-color);  
+  outline: 2px solid var(--accent-color);
 }
 
 .floppy-icon {

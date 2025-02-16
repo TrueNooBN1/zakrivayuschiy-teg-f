@@ -250,6 +250,8 @@
   background-color: transparent;
   block-size: var(--like-btn-icon-height);
   inline-size: var(--like-btn-icon-height);
+  outline: 2px solid transparent;
+  transition: outline 0.3s ease;
 }
 
 .like-icon {

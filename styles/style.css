@@ -246,7 +246,6 @@
   margin-top: 2px;
   border: none;
   padding: 0;
-  outline: none;
   background-color: transparent;
   block-size: var(--like-btn-icon-height);
   inline-size: var(--like-btn-icon-height);

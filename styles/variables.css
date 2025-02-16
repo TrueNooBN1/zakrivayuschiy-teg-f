@@ -40,4 +40,7 @@
 
   --like-btn-width: 130px;
   --like-btn-height: 38px;
+
+  --heart-contour-color: #000;
+  --heart-main-color: red;
 }

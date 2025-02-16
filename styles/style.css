@@ -52,7 +52,8 @@
   margin: var(--header-top-margin) auto;
   background-color: #fff;
   border: 2px solid var(--border-color);
-  inline-size: min(100%, var(--header-container-size));
+  /* inline-size: min(100%, var(--header-container-size)); */
+  inline-size: min(100vw, clamp(375px, 49%, 700px));
   block-size: var(--header-block-size);/* tovar */
 }
 
@@ -85,7 +86,9 @@
   font-weight: var(--main-font-weight, 400);
   flex-direction: column;
   align-items: stretch;
-  inline-size: min(100%, var(--header-container-size));
+  /* inline-size: min(100%, var(--header-container-size)); */
+  inline-size: min(100vw, clamp(375px, 49%, 700px));
+
   border: 2px solid var(--border-color);
 }
 
@@ -98,17 +101,20 @@
 }
 
 .card__container-image {
-  /* padding-right: 3px; */
-  inline-size: var(--header-container-size);
+  margin-top: 4px;
+  inline-size: 100%;
   position: relative;
   overflow: hidden;
+  /* aspect-ratio: 1/1; */
 }
 
 .card__image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   display: block;
-  inline-size: 100%;
-  block-size: 100%;
   object-fit: cover;
+  aspect-ratio: 1/1;
 }
 
 .filter_blur {
@@ -363,7 +369,7 @@
     width: 100vw;
   } */
   :root {
-    --header-container-size: 375px;
+    /* --header-container-size: 375px; */
     --tag-offset: 13px;
     --header-block-size: 327px;
     --save-button-width: 306px;

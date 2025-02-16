@@ -17,7 +17,6 @@
   --header-font: "PressStart2P";
 
   --header-container-size: 700px;
-  --header-block-size: 368px;
 
   --border-color: #000;
 
@@ -26,6 +25,7 @@
                           linear-gradient(to bottom, #e7e7e7, #1a1a1a);
 
   --header-top-margin: 100px;
+  --header-top-padding: 127px;
 
   --save-button-width: 335px;
   --save-button-height: 55px;
@@ -40,6 +40,7 @@
 
   --like-btn-width: 130px;
   --like-btn-height: 38px;
+  --like-btn-icon-height: 34px;
 
   --heart-contour-color: #000;
   --heart-main-color: red;
@@ -48,7 +49,7 @@
 @media (width <= 375px) {
   :root {
     --tag-offset: 13px;
-    --header-block-size: 327px;
+    --header-top-padding: 115px;
     --save-button-width: 306px;
     --save-button-height: 84px;
     --svg-save-icon-size: 28px;
@@ -56,38 +57,5 @@
     --dialog-ok-button-height: 38px;
     --dialog-top-margin: 10px;
     --dialog-side-margin: 22px;
-  }
-  
-  .header__container {
-    width: 100vw;
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .header__title {
-    margin-top: 115px;
-  }
- 
-  .header__subtitle {
-    margin-top: 5px;
-  }
-    
-  .card {
-    margin-right: 0;
-    margin-left: 0;
-    border: 2px solid var(--border-color);
-    inline-size: 100%;
-  }
-
-  .save_button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-top: 12px;
-  }
- 
-  .floppy-icon {
-    margin-right: 0px;
   }
 }

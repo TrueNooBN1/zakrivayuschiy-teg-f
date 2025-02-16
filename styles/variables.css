@@ -1,5 +1,5 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-:root{
+:root {
   --main-font-weight: 400;
   --bold-font-weight: 700;
 
@@ -32,8 +32,8 @@
 
   --svg-save-icon-size: 21px;
 
-  --dialog-ok-button-width: 293px; 
-  --dialog-ok-button-height: 40px; 
+  --dialog-ok-button-width: 293px;
+  --dialog-ok-button-height: 40px;
   --dialog-top-margin: 10px;
   --dialog-side-margin: 10px;
   --accent-color: #000;

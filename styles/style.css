@@ -225,10 +225,12 @@
   margin: auto;
   text-align: center;
   inline-size: 353px;
+  padding: 30px;
 }
 
-.save_dialog[opened] {
+.save_dialog[open] {
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -238,7 +240,10 @@
 
 .ok_button {
   text-transform: uppercase;
-  inline-size: var(--dialog-ok-button-width);
+  padding: 0;
+  margin: 0;
+  inline-size: 100%;
+  /* inline-size: calc(var(--dialog-ok-button-width) - 100px); */
   block-size: var(--dialog-ok-button-height);
 }
 
@@ -285,8 +290,9 @@
 .dialog__text {
   display: flex;
   align-items: center;
+  justify-items: flex-start;
   gap: 20px;
-  margin: var(--dialog-top-margin) var(--dialog-side-margin) 30px;
+  /* margin: 0 var(--dialog-side-margin) 30px; */
   line-height: 21px;
   text-align: left;
   text-transform: uppercase;
@@ -329,7 +335,4 @@
     gap: 8px;
   }
  
-  .floppy-icon {
-    margin-right: 0px;
-  }
 }

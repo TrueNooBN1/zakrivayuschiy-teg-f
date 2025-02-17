@@ -34,8 +34,9 @@
 
   --dialog-ok-button-width: 293px;
   --dialog-ok-button-height: 40px;
-  --dialog-top-margin: 10px;
-  --dialog-side-margin: 10px;
+  --dialog-inline-size: 353px;
+  --dialog-top-margin: 30px;
+  --dialog-side-margin: 30px;
   --accent-color: #000;
 
   --like-btn-width: 130px;
@@ -53,9 +54,9 @@
     --save-button-width: 306px;
     --save-button-height: 84px;
     --svg-save-icon-size: 28px;
-    --dialog-ok-button-width: 257px;
+    /* --dialog-ok-button-width: 257px; */
     --dialog-ok-button-height: 38px;
-    --dialog-top-margin: 10px;
-    --dialog-side-margin: 22px;
+    --dialog-side-margin: 42px;
+    --dialog-inline-size: 347px;
   }
 }

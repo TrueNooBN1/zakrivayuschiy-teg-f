@@ -177,6 +177,7 @@
   font-family: var(--header-font, fantasy);
   font-weight: var(--main-font-weight, 400);
   font-size: var(--main-font-size); /* tovar */
+  inline-size: 100%;
   mix-blend-mode: difference;
 }
 
@@ -224,8 +225,9 @@
 .save_dialog {
   margin: auto;
   text-align: center;
-  inline-size: 353px;
-  padding: 30px;
+  min-inline-size: var(--dialog-inline-size);
+  max-inline-size: var(--dialog-inline-size);
+  padding: var(--dialog-top-margin) var(--dialog-side-margin);
 }
 
 .save_dialog[open] {
